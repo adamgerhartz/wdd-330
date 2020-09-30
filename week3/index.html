@@ -9,19 +9,19 @@
 	<ul>
 		<li>
 		<div id="code_block">
-			<pre>
+<!-- BIG MESS -->
 <code>
-  function Human (age) {
-    this.age = age
-  }
+  <span id="purple">function</span> <span id="orange">Human</span> <span id="white">(age) {</span><br>
+    <span id="purple" style="margin-left:23px;">this</span><span id="white">.age</span> <span id="blue">=</span> <span id="white">age<br>
+  }</span>
+  <br><br>
+  <span id="purple">let</span> <span id="white">greg</span> <span id="blue">=</span> <span id="purple">new</span> <span id="light-orange">Human</span><span id="white">(</span><span id="orange">22</span><span id="white">)</span><br>
+  <span id="purple">let</span> <span id="white">thomas</span> <span id="blue">=</span> <span id="purple">new</span> <span id="light-orange">Human</span><span id="white">(</span><span id="orange">24</span><span id="white">)</span><br><br>
 
-  let greg = new Human(22)
-  let thomas = new Human(24)
-
-  console.log(greg) // this.age = 22
-  console.log(thomas) // this.age = 24
+  <span id="white">console.</span><span id="orange">log</span><span id="white">(greg)</span> <span id="comment-grey">// this.age = 22</span><br>
+  <span id="white">console.</span><span id="orange">log</span><span id="white">(thomas)</span> <span id="comment-grey">// this.age = 24</span><br>
 </code>
-			</pre>
+<!-- END BIG MESS -->
 		</div>
 		<p>In the above code snippet, the object "Human" is defined, and the <code>this</code> keyword is used. <code>this</code> refers to the object. Inside the "Human" constructor code block, instead of writing <code>this.age = age</code>, you can write <code>greg.age = age</code> (where <code>greg</code> refers to the <code>greg</code> object). However, whenever you create a new object (<code>thomas</code>), it will set <code>greg</code>'s age to whatever was passed to the constructor. Hence, this is why we need to use <code>this</code>. </p>
 		</li>

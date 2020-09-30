@@ -7,8 +7,32 @@ code {
 
 #code_block {
 	padding: 5px;
-	background-color: #f1f1f1;
+	background-color: #373737;
 	width: 400px;
 	position: relative;
 	border-radius: 5px;
+}
+
+#purple {
+	color: #b19cd9;
+}
+
+#orange {
+	color: orange;
+}
+
+#white {
+	color: white;
+}
+
+#blue {
+	color: #80CBCB;
+}
+
+#light-orange {
+	color: #F0C568;
+}
+
+#comment-grey {
+	color: #999999;
 }
