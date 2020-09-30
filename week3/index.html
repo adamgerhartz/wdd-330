@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Notes Week 3</title>
+	<link rel="stylesheet" href="notes3.css">
+</head>
+<body>
+	<h1>Notes Week 3</h1>
+	<ul>
+		<li>
+		<div id="code_block">
+			<pre>
+<code>
+  function Human (age) {
+    this.age = age
+  }
+
+  let greg = new Human(22)
+  let thomas = new Human(24)
+
+  console.log(greg) // this.age = 22
+  console.log(thomas) // this.age = 24
+</code>
+			</pre>
+		</div>
+		<p>In the above code snippet, the object "Human" is defined, and the <code>this</code> keyword is used. <code>this</code> refers to the object. Inside the "Human" constructor code block, instead of writing <code>this.age = age</code>, you can write <code>greg.age = age</code> (where <code>greg</code> refers to the object itself). However, whenever you create a new object (<code>thomas</code>), it will set <code>greg</code>'s age to whatever was passed to the constructor. Hence, this is why we need to use <code>this</code>. </p>
+		</li>
+	</ul>
+
+	<a href="../index.html">Go back to the Table of Contents</a>
+</body>
+</html>

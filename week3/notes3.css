@@ -1,0 +1,14 @@
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  padding: 2px;
+  font-size: 105%;
+}
+
+#code_block {
+	padding: 5px;
+	background-color: #f1f1f1;
+	width: 400px;
+	position: relative;
+	border-radius: 5px;
+}
