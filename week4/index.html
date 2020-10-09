@@ -7,7 +7,20 @@
 <body>
 	<h1>Notes Week 4</h1>
 	<ul>
-		<li>The first thing I've learned is that we should not add any event listeners inside of our HTML file. Instead, to separate concerns, you can do two things: (1) you could add an event listener in between the <code>&ltscript&gt</code> element, or you could create an external file to has the event listener. Either way, the purpose is to separte HTML from JavaScript. This is considered a good practice.</li>
+		<li>The first thing I've learned is that we should not add any event listeners inside of our HTML file. Instead, to separate concerns, you can do two things: (1) you could add an event listener in between the <code>&ltscript&gt</code> element, or you could create an external file that has the event listener. Either way, the purpose is to separte HTML from JavaScript. This is considered a good practice.</li>
+	</ul>
+
+	<h2>Questions</h2>
+	<ul>
+		<li>
+			Why can one create a global variable from the console like so: 
+			<code>function createGlobal() { c = 5; }</code>, call <code>createGlobal()</code>, and then display that variable by typing in <code>c</code> in the console in the global scope, and not be able to do that in a JavaScript file?
+			Why does the browser give me an error that says: <code>Uncaught ReferenceError: c is not defined</code>? What makes the console so different than a JavaScript file? It doesn't bother me that I cannot create a global variable inside of a scoped function, but it bothers me that the console can do one thing, and a script file can't do that one thing. 
+		</li><br>
+
+		<li>
+			Another question I have is about the concept of wrapper objects. In JavaScript, when you assign a string literal value (primitive data type) to a variable, that variable actually has methods and properties, as if it were an object instead. For example, you could write this in the console: <code>const name = 'Adam'; name.length;</code> Are primitive data types actually objects? How is that with memory? Do other programming langauges do this? 
+		</li>
 	</ul>
 
 	<a href="../index.html">Go back to the Table of Contents</a>
