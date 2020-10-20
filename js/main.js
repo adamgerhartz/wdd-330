@@ -19,6 +19,10 @@ const listLinks = [
   {
     label: "Week5 notes",
     url: "week5/index.html"
+  },
+  {
+    label: "Challenge One: Todo — Midterm",
+    url: "week6/todo/todo.html"
   }
 ];
 
