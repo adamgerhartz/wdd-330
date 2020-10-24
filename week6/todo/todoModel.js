@@ -1,4 +1,3 @@
-import Todo from './todoEntity.js';
 import LocalStorageHelper from './ls.js';
 
 export default class TodoModel {
