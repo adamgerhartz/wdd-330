@@ -3,26 +3,42 @@ import LocalStorageHelper from './ls.js';
 
 export default class TodoModel {
 
-	constuctor() {
+	constructor() {
 		this.todoList = [];
-		this.storageHelper = new LocalStorageHelper(todoList);
+		this.storageHelper = new LocalStorageHelper();
 	}
 
-	getAllTodos() {
+	getTodoList(type) {
+		this.todoList = [];
+		this.todoList = this.storageHelper.getTodoList(type);
 		return this.todoList;
 	}
 
-	getActiveTodos() {
-		const filteredList = this.todoList.filter(todo => todo.completed === false);
-		return filteredList;
+	getCompletedLength() {
+		return this.storageHelper.getCompletedLength();
 	}
 
-	getCompletedTodos() {
-		const filteredList = this.todoList.filter(todo => todo.completed === true);
-		return filteredList;
+	saveNewTodo(content) {
+		const todo = {
+			'id' : Date.now(),
+			'content' : content,
+			'completed' : false
+		}
+		this.storageHelper.addToList(todo);
 	}
 
-	createTodo() {
+	isCompletedTodo(todoId) {
+		if (this.storageHelper.isCompletedTodo(todoId)) {
+			return true;
+		}
+		return false;
+	}
 
+	setCompleted(id, booleanValue) {
+		this.storageHelper.setCompleted(id, booleanValue);
+	}
+
+	deleteFromList(id) {
+		this.storageHelper.deleteFromList(id);
 	}
 }

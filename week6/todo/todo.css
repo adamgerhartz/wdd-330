@@ -1,0 +1,222 @@
+@import url('https://css.gg/add-r.css');
+@import url('https://css.gg/check-o.css');
+@import url('https://css.gg/trash.css');
+
+/* c9f0ff-eafffd-efeff0-d5cad6-6b5e62 */
+
+body {
+	background-color: #c2b8b2;
+}
+
+.gg-trash, .gg-add-r {
+	float: right;
+	right: 10px;
+}
+
+
+#checkbox {
+	min-width: auto;
+	height:auto;
+	padding: 12px;
+	text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#trash-cont {
+	grid-column-start: 3;
+    grid-column-end: 4;
+    min-width: auto;
+    align-content: space-between;
+    padding: 12px;
+    height: auto;
+}
+
+#todo-text {
+	grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'Courier New';
+    height: auto;
+    min-width: auto;
+    padding: 12px 0px 12px 12px;
+     -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for WebKit */
+     word-break: break-word;
+
+	-webkit-hyphens: auto;
+   	-moz-hyphens: auto;
+        hyphens: auto;
+}
+
+#todo-main {
+	border: 1px solid #204b57;
+	margin: 16px;
+	background-color: #125e8a;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	color: #125e8a;
+}
+
+#todo {
+	display: grid; 
+	align-items: center;
+	grid-template-columns: 3.0em auto 3.5em;
+	background-color: white;
+	border-bottom: 1px solid black;
+	margin: 0;
+	min-height: 3em;
+	min-width: 100%;
+	word-wrap: break-word;
+}
+
+#bottom-bar {
+	font-family: 'Courier New';
+	margin: 0;
+	padding: 12px 0px 12px 1em;
+	background-color: #125e8a;
+	color: #c2b8b2;
+	grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#add-todo {
+	margin: 16px;
+}
+
+.add-todo-div {
+	display: grid;
+	grid-template-columns: auto 3.5em;	
+    align-items: center;
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: 0;
+    margin-right: 3em;
+    height: 2em;
+    margin-bottom: 1.2em; 
+}
+
+.bottom {
+	display: grid;
+	grid-template-columns: auto 3.4em 5.2em 7.5em;
+	height: 3em;
+}
+
+#all {
+	grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+    padding: 12px;
+    color: #c2b8b2;
+    font-family: 'Courier New';
+} 
+
+#active {
+	grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 0;
+    padding: 12px;
+    color: #c2b8b2;
+    font-family: 'Courier New';
+} 
+
+#completed {
+	grid-column-start: 4;
+    grid-column-end: 5;
+    min-width: auto;
+    padding: 12px;
+    color: #c2b8b2;
+    font-family: 'Courier New';
+} 
+
+#all:hover, #active:hover, #completed:hover {
+  cursor: pointer;
+} 
+
+
+#add-text {
+	font-size: 1em;
+	height: 100%;
+	grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Courier New';
+    padding-left: 1em;
+}
+
+#add-text:focus {
+	outline: none;
+}
+
+#icon {
+	padding-right: .5em;
+	grid-column-start: 2;
+    grid-column-end: 3;
+    color: #197bbd;
+}
+
+#add-text::-webkit-input-placeholder {
+  font-family: 'Courier New', Arial, Helvetica, sans-serif;
+}
+
+#add-text:-ms-input-placeholder {
+  font-family: 'Courier New', Arial, Helvetica, sans-serif;
+}
+
+#add-text:-moz-placeholder {
+  font-family: 'Courier New', Arial, Helvetica, sans-serif;
+}
+
+#add-text::-moz-placeholder {
+  font-family: 'Courier New', Arial, Helvetica, sans-serif;
+}
+
+.highlighted {
+    border-bottom: 3.5px solid ;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
+ .gg-check-o {
+   	box-sizing: border-box;
+   	position: relative;
+    z-index: 0;
+    background-color: white;
+   	display: block;
+   	transform: scale(var(--ggs,1));
+   	width: 22px;
+   	height: 22px;
+   	border: 2px solid;
+   	border-radius: 100px
+}
+
+.gg-check-o::after {
+   	content: "";
+   	display: block;
+   	box-sizing: border-box;
+    color: white;
+  	position: absolute;
+  	left: 3px;
+  	top: -1px;
+  	width: 6px;
+  	height: 10px;
+  	border-color: currentColor;
+  	border-width: 0 2px 2px 0;
+  	border-style: solid;
+  	transform-origin: bottom left;
+  	transform: rotate(45deg)
+} 
+
+ .gg-check-o:hover, .gg-trash:hover, .gg-add-r:hover {
+    cursor: pointer;
+ }
+
+@media only screen and (max-width: 600px) {
+  #bottom-bar {
+    font-size: 12px;
+  }
+}
