@@ -217,6 +217,9 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   #bottom-bar {
-    font-size: 12px;
+    font-size: 8px;
+  }
+  #todo-main {
+    margin: 8px;
   }
 }
