@@ -19,17 +19,17 @@ body {
 	height:auto;
 	padding: 12px;
 	text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 #trash-cont {
 	grid-column-start: 3;
-    grid-column-end: 4;
-    min-width: auto;
-    align-content: space-between;
-    padding: 12px;
-    height: auto;
+  grid-column-end: 4;
+  min-width: auto;
+  align-content: space-between;
+  padding: 12px;
+  height: auto;
 }
 
 #todo-text {
@@ -81,11 +81,7 @@ h1 {
 	background-color: #125e8a;
 	color: #c2b8b2;
 	grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-#add-todo {
-	margin: 16px;
+  	grid-column-end: 2;
 }
 
 .add-todo-div {
@@ -95,17 +91,21 @@ h1 {
     position: fixed;
     width: -webkit-fill-available;
     bottom: 0;
-    margin-right: 3em;
+	margin-left: -17px;
+	margin-right: 17px;
     height: 2em;
-    margin-bottom: 1.2em; 
-    z-index: 10;
-    overflow: hidden;
+	overflow: hidden;
+	padding: 1em;
+	z-index: 10;
+	background-color: #c2b8b2;
 }
 
 .bottom {
 	display: grid;
 	grid-template-columns: auto 3.4em 5.2em 7.5em;
 	height: 3em;
+	overflow: hidden;
+	margin-bottom: 3.5em;
 }
 
 #all {
@@ -219,7 +219,7 @@ h1 {
 
 @media only screen and (max-width: 600px) {
   #bottom-bar {
-    font-size: 11px;
+    font-size: 8px;
   }
   #todo-main {
     margin: 8px;
