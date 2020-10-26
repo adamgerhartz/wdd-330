@@ -98,6 +98,7 @@ h1 {
     margin-right: 3em;
     height: 2em;
     margin-bottom: 1.2em; 
+    z-index: 10;
 }
 
 .bottom {
