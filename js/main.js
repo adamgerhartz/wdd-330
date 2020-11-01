@@ -23,7 +23,7 @@ const listLinks = [
   {
     label: "Challenge One: Todo — Midterm",
     url: "week6/todo/todo.html"
-  }
+  },
   {
     label: "Week7 notes",
     url: "week7/index.html"
