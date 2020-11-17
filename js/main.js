@@ -1,4 +1,3 @@
-
 const listLinks = [
   {
   	label: "Week1 notes",
@@ -33,8 +32,12 @@ const listLinks = [
     url: "week8/index.html"
   },
   {
-  	label: "week9 notes",
+  	label: "Week9 notes",
   	url: "week9/index.html"
+  },
+  {
+  	label: "Week10 notes",
+  	url: "week10/index.html"
   }
 ];
 
