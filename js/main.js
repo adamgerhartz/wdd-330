@@ -38,6 +38,10 @@ const listLinks = [
   {
   	label: "Week10 notes",
   	url: "week10/index.html"
+  },
+  {
+    label: "Final project",
+    url: "wdd-final.herokuapp.com/home.html"
   }
 ];
 
