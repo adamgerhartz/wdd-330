@@ -41,7 +41,7 @@ const listLinks = [
   },
   {
     label: "Final project",
-    url: "wdd-final.herokuapp.com/home.html"
+    url: "https://wdd-final.herokuapp.com/home.html"
   }
 ];
 
